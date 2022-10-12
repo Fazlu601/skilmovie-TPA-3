@@ -35,7 +35,7 @@ const renderMovie = (data) => {
                                 <div class="card-title text-wrap overflow-hidden col-9 h5">${item.original_title}</div>
                                 <div class="text-end col-3 h6">${item.vote_average}</div>
                             </div>
-                            <div class="row >
+                            <div class="row ps-2 >
                                 <p class="fs-5">${item.release_date}</p>
                             </div>
                         </div>
