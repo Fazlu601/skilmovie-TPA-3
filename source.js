@@ -33,15 +33,15 @@ if(!search.value){
 const renderMovie = (data) => {
     wrapperContent.innerHTML = "";
     data['results'].reverse().forEach( item => {
-        let card = `  <div class="card p-0 m-3 col-6 col-sm-5 col-md-5 col-lg-4 col-xl-3 shadow-sm">
+        let card = `  <div class="card p-0 m-4 col-6 col-sm-5 col-md-4 col-lg-3 shadow-sm">
                         <img src="https://image.tmdb.org/t/p/w500/${item.backdrop_path == true ? item.backdrop_path : item.poster_path}" class="card-img-top img-fluid" alt="">
                         <div class="card-body">
                             <div class="row pb-3">
-                                <h3 class="card-title text-wrap overflow-hidden fs-5 col-9">${item.original_title}</h3>
-                                <h3 class="text-end col-3 fs-6">${item.vote_average}</h3>
+                                <div class="card-title text-wrap overflow-hidden col-9 h5">${item.original_title}</div>
+                                <div class="text-end col-3 h6">${item.vote_average}</div>
                             </div>
-                            <div class="row d-flex flex-column align-items-end" style="height: 200px;">
-                                <h3 class="fs-5">${item.release_date}</h3>
+                            <div class="row p-2 d-flex flex-column align-items-end>
+                                <p class="fs-5">${item.release_date}</p>
                             </div>
                         </div>
                     </div>`;
