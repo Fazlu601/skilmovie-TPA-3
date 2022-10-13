@@ -16,12 +16,11 @@
     background-attachment: fixed;
 }
 
-.moon {
-    background-image: url('../img/Moon.svg');
+.cloudy {
+    background-image: url('../img/Cloudy.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 /* card event hover */
@@ -72,3 +71,4 @@
         font-size: 12px;
     }
 }
+
