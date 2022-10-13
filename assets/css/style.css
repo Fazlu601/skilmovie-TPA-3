@@ -1,0 +1,74 @@
+/* Import font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color:  #303030;
+}
+
+/* Background image */
+.hero {
+    background-image: url('../img/bioskop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.moon {
+    background-image: url('../img/Moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* card event hover */
+.card{
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.8s;
+}
+
+
+/* Breakpoint media query responsif */
+@media screen and (max-width:680px) {
+    .card-title, .text-end.h6 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .card-title, .text-end.h6, .fs-5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .card{
+        width: 70%;
+    }
+    .header-title{
+        flex-direction: column;
+        width: 100%;
+    }
+    header {
+        margin: 0;
+    }
+    .logo{
+        padding-top: 5px ;
+    }
+    h1.text-title {
+        font-size: 20px;
+    }
+    form.form-group{
+        width: 80%;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+    input.form-control {
+        font-size: 12px;
+    }
+}
